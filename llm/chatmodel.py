@@ -11,9 +11,9 @@ import openai
 def get_client() -> AzureOpenAI:
 
     return AzureOpenAI(
-        api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-        api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
-        azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
+        api_key=os.getenv("AZURE_OPENAI_CHAT_KEY"),
+        api_version=os.getenv("AZURE_OPENAI_CHAT_API_VERSION"),
+        azure_endpoint=os.getenv("AZURE_OPENAI_CHAT_ENDPOINT")
     )
 
 def get_structured_response(
